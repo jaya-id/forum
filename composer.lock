@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29bf5817bd5453296a727ecb2b17d411",
+    "content-hash": "773d126b33a68229a38db66d20f2483f",
     "packages": [
         {
             "name": "askvortsov/flarum-pwa",
@@ -2549,6 +2549,133 @@
                 }
             ],
             "time": "2021-05-17T13:47:34+00:00"
+        },
+        {
+            "name": "fof/extend",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/extend.git",
+                "reference": "c0d0c796b3cc03bfb2fc09b80fb481f579a0ccf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/extend/zipball/c0d0c796b3cc03bfb2fc09b80fb481f579a0ccf7",
+                "reference": "c0d0c796b3cc03bfb2fc09b80fb481f579a0ccf7",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Extend\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martin",
+                    "email": "me+fof@datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Configurable PHP components for your Flarum extension",
+            "support": {
+                "issues": "https://github.com/FriendsOfFlarum/extend/issues",
+                "source": "https://github.com/FriendsOfFlarum/extend/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-05-21T23:38:23+00:00"
+        },
+        {
+            "name": "fof/nightmode",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/nightmode.git",
+                "reference": "14c253189883bf19447c8a434573385d7733c10a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/nightmode/zipball/14c253189883bf19447c8a434573385d7733c10a",
+                "reference": "14c253189883bf19447c8a434573385d7733c10a",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0.0",
+                "fof/extend": "^1.0.0"
+            },
+            "replace": {
+                "reflar/nightmode": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Night Mode",
+                    "category": "feature",
+                    "icon": {
+                        "name": "far fa-moon",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/21492"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\NightMode\\": "src/"
+                },
+                "files": [
+                    "src/Overrides/Forum/ValidateCustomLess.php",
+                    "src/Overrides/Frontend/Assets.php",
+                    "src/Overrides/Frontend/RecompileFrontendAssets.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Lopez",
+                    "email": "Lopez.T.Christian@gmail.com"
+                }
+            ],
+            "description": "Add a Night Mode option for your users to use on your Flarum forum",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "extension",
+                "flarum",
+                "friendsoflarum",
+                "mode",
+                "night",
+                "nightmode",
+                "option"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/21492",
+                "issues": "https://github.com/FriendsOfFlarum/nightmode/issues",
+                "source": "https://github.com/FriendsOfFlarum/nightmode"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2021-05-26T17:57:21+00:00"
         },
         {
             "name": "fof/reactions",
@@ -6436,6 +6563,67 @@
                 }
             ],
             "time": "2021-08-11T01:06:55+00:00"
+        },
+        {
+            "name": "realodix/flarum-ext-indonesian",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/realodix/flarum-ext-indonesian.git",
+                "reference": "f854b69584fa39a3ea27738b9d3a7ffbbc042149"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/realodix/flarum-ext-indonesian/zipball/f854b69584fa39a3ea27738b9d3a7ffbbc042149",
+                "reference": "f854b69584fa39a3ea27738b9d3a7ffbbc042149",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Indonesian",
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundColor": "#00247d",
+                        "backgroundSize": "cover",
+                        "backgroundPosition": "center"
+                    }
+                },
+                "flarum-locale": {
+                    "code": "id",
+                    "title": "Indonesian"
+                },
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Budi Hermawan",
+                    "email": "budi03@gmail.com"
+                }
+            ],
+            "description": "Indonesian language pack.",
+            "keywords": [
+                "flarum",
+                "flarum-extension",
+                "indonesia",
+                "indonesian-language",
+                "translation"
+            ],
+            "support": {
+                "docs": "https://discuss.flarum.org/d/1358-indonesian-language-pack",
+                "issues": "https://github.com/realodix/flarum-ext-indonesian/issues",
+                "source": "https://github.com/realodix/flarum-ext-indonesian"
+            },
+            "time": "2021-07-22T07:35:57+00:00"
         },
         {
             "name": "s9e/regexp-builder",
